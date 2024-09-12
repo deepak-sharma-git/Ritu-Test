@@ -1,6 +1,11 @@
 <div>
-    <button>
-        <img [src]="'public/user/'+ selectedUser.avatar" [alt]="selectedUser.name" />
-        <span>{{selectedUser.name}}</span>
+    <button (click)="onSelectUser()">
+        <!--<img [src]="'public/user/'+ selectedUser.avatar" alt="" />-->
+        <img  [src]="imagePath" [alt]=""  style="height: 20px !important;"/>
+       <!-- <span>{{selectedUser.name}}</span>-->
+        <!-- now using signal concept-->
+         <span>{{imageName}}</span>
+
+        
     </button>
 </div>
